@@ -1,0 +1,260 @@
+
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  text-decoration: box-shadow: ;;
+  border: none;
+  outline: none;
+  font-family: "Times New Roman",serif;
+}
+
+html{
+  font-size:70.5%;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+overflow-x:hidden;
+  background-color: pink;
+  color: deeppink
+}
+p{
+  text-shadow: 2px 4px 2px #FFF;
+}
+
+
+header{
+  margin-top:0px;
+  position:fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: transparent;
+  filter:drop-shadow(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  Z-index: 100;
+}
+  
+.logo{
+  font-size:4rem;
+color: hotpink;
+  font-weight:850;
+  cursor:pointer;
+  transition: 0.6s ease;
+}
+
+.logo:hover{
+   transform:scale(1.1);
+}
+
+nav a{
+  font-size: 2.3rem;
+  color: floralwhite;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover
+nav a.active{
+  color: hotpink;
+  border-bottom:9px hotpink;
+}
+
+ @media(max-width;:990px){
+  nav{
+    position: absolute;
+    top: 100%;
+    right:0;
+    width: 40%;
+    border-left: 3px deeppink;
+    border-left: 3px solid mediumpurple;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem solid;
+    background-color: black;
+    border-top:0.1rem solid rgba(0,0,0,0.1)
+ }
+ 
+ nav.active{
+   display:block;
+ }
+
+ nav a{
+    display:block
+    font-size:2rem;
+    margin: 3rem 0;
+ }
+ 
+ nav a:hover
+ nav a.active{
+   padding: 1rem;
+   border-radius:0.5rem;
+   border-bottom: 0.5rem solid hotpink;
+ }
+}
+  
+  section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem
+  }
+  
+  .home{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 4rem;
+    background-color:pink;
+  }
+  
+  .home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700
+    line-height: 1.0;
+    }
+    
+    span{
+      color: deeppink;
+    }
+    
+    .home-content h3{
+      font-size: 4rem;
+      margin-bottom: 9rem;
+      font-weight: 900;
+    }
+    
+    .home-img{
+      border-radius:50%;
+    }
+    
+    .home-img{
+      position:relative;
+      width:45vw;
+      border-radius:900%;
+      box-shadow: 0 0 10px #FFF;
+      cursor:pointer;
+      transition:0.2s linear
+    }
+    
+    .home-img img: hover {
+      font-size: 1.8rem;
+      font-weight: 900;
+    }
+    
+    . social-icon a{
+      display: inline-flex;
+      justify-content: center;
+      align-items:center;
+      width: 4rem;
+      height: 4rem;
+      background-color: transparent ;
+      border:0.2rem deeppink;
+      font-size: 2rem;
+      border-radius: 50%;
+      margin: 3rem 1.5rem 3rem;
+      transition: 0.3s ease;
+    }
+    
+    .social-icons a-hover{
+      color: lightpink;
+      transform:scale(1.3)translateX();
+      background-color: black;
+      box-shadow: 0 0 25px hotpink;
+     }
+    
+  
+  .btn
+     display:inline-block;
+     padding: 1rem 2.8rem;
+     background-color:black
+     border-radius: 4rem;
+     font-size: 1.6rem
+     color: hotpink
+     letter-spacing:0.3rem;
+     font-wight: 600;
+     border: 2px solid hotpink
+     transition:0.3s ease;
+     cursor: pointer
+} 
+
+  .btn:hover{
+    transform:scale3d(1.03);
+    background-color:hotpink;
+    color:lightpink;
+    box-shadow: 0 0 25px hotpink;
+  }
+  
+  .typing-text{
+    font-size: 34px;
+    font-weight:600
+    min-width:280px;
+  } 
+  
+  .typing-text span{
+    position:relative;
+  }
+  
+  .typing-text span:before{
+    content:"software developer ";
+    color:hotpink;
+    animation:words 20s infinite;
+  }
+  
+  .typing-text span::after{
+    content:"";
+   background-color lightpink
+   position:absolute;
+  width:calc(100 + 8px);
+  height:100%;
+  border-left:3px lightpink;
+  right:-8;
+  animation: cursor 0.6 input;
+  }
+  
+  @keyframes cursor{
+    to{
+      border+left: 3px solid white;
+    }
+  }
+  
+  @keyframes words{
+    0%, 20%
+    content:"web developer "
+  }
+  21%, 40%{
+    content: "Software Developer";
+  }
+  41%, 60%
+  content: "YouTuber"
+  }
+  81%, 100%
+  content: "Script Writer"
+  }
+ }
+ 
+ @media(max-width: 100px;){
+   .home{
+     gap:4rem;
+   }
+  }
+ 
+ @media(max-width:995px){
+   .home{
+     flex-direction: column;
+     margin: 5rem 4rem;
+   }
+ 
+ .home .home-content h3{
+   font-size: 5rem;
+ }
+ 
+ .home-img .home-img
+ margin-top: 4rem;
+ 
+
+ 
+ 
